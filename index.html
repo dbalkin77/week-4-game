@@ -8,8 +8,9 @@
 </head>
 <body>
 	<div class="container">
+		<!-- Title of Game -->
 		<h1 class="header">CrystalsCollector!</h1>
-
+		<!-- Body of Page with instructions -->
 		<section class="instructions">
 			<p><br>You will be given a random number at the start of the<br> game</p>
 			<p><br>There are four crystal below. By clicking on a random crystal you<br> will add a specific amount of points to your total score</p>
@@ -17,6 +18,30 @@
 			<p><br>The value of each crystal is hidden from you until you<br> click on it.</p>
 			<p><br>Each time when the game starts, the game will change the<br> value of each crystal.</p>
 		</section>
+		<!-- Random Number -->
+		<div class="random">0</div>
+		<!-- Wins and Losses Box -->
+		<div class="scores">
+			<p>Wins: <span id="wins">0</p>
+			<p>Losses: <span id="losses">0</p>
+		</div>
+
+		<div>
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+			<img src="" alt="">
+		</div>
+
+		<div class="scoreTracker">
+			<p>Your total score is:</p>
+		</div>
+
+		<div>
+			<p id="fscore">0</p>
+		</div>
+
+
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
 </body>
