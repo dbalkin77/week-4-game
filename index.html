@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CrystalsCollector</title>
+	<!-- links to external stylesheet and reset -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<!-- link to Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="container">
@@ -27,10 +30,10 @@
 		</div>
 
 		<div>
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
-			<img src="" alt="">
+			<img id="image1" src="assets/images/pokeball.jpg" alt="pokeball">
+			<img id="image2" src="assets/images/Egg.jpg" alt="yosi egg">
+			<img id="image3" src="assets/images/mushroom.jpg" alt="mushroom">
+			<img id="image4" src="assets/images/Mario.jpg" alt="coin box">
 		</div>
 
 		<div class="scoreTracker">
@@ -40,9 +43,6 @@
 		<div>
 			<p id="fscore">0</p>
 		</div>
-
-
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg=" crossorigin="anonymous"></script>
+	<script src="assets/javascript/game.js"></script>	
 </body>
 </html>
