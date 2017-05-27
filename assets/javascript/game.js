@@ -1,6 +1,6 @@
-// $(document).ready(function() {
-//     console.log( "ready!" );
-
+$(document).ready(function() {
+    console.log( "ready!" );
+});
 // Variables
 
 var numbers = [1,2,3,4,5,6,7,8,9,10,11,12];
@@ -15,30 +15,109 @@ var pokeBall = Math.floor(Math.random() * numbers.length);
 var yoshiEgg = Math.floor(Math.random() * numbers.length);
 var mushroom = Math.floor(Math.random() * numbers.length);
 var coinBox = Math.floor(Math.random() * numbers.length);
+
+// Generate Computer Score and display to browser
 var computerScore = Math.floor(Math.random() * finalScore.length);
+$("#computerScore").text(computerScore);
 
+// Functions/////////////////
+// Reset
+var reset = function () {
+	computerScore = Math.floor(Math.random() * finalScore.length);
+	$("#computerScore").text(computerScore);
+	playerScore = 0;
+	$("#playerScore").text(playerScore);
+	pokeBall = Math.floor(Math.random() * numbers.length);
+	yoshiEgg = Math.floor(Math.random() * numbers.length);
+	mushroom = Math.floor(Math.random() * numbers.length);
+	coinBox = Math.floor(Math.random() * numbers.length);
+}
 
-// Functions
 
 // Clink Events for icons
+
+
 $( "#pokeball" ).click(function() {
 	playerScore = playerScore + pokeBall;
 	$("#playerScore").text(playerScore);
+	if (playerScore === computerScore) {
+	wins++;
+	$( "#wins" ).text(wins);
+	reset();
+} 
+	else if (playerScore > computerScore) {
+	losses++;
+	$( "#losses" ).text(losses);
+	reset();
+}
 });
 
 $( "#yoshiEgg" ).click(function() {
- 	console.log(yoshiEgg);
+	playerScore = playerScore + yoshiEgg;
+	$("#playerScore").text(playerScore);
+	if (playerScore === computerScore) {
+	wins++;
+	$( "#wins" ).text(wins);
+	reset();
+} 
+	else if (playerScore > computerScore) {
+	losses++;
+	$( "#losses" ).text(losses);
+	reset();
+}
 });
 
 $( "#mushroom" ).click(function() {
-	console.log(mushroom); 
+	playerScore = playerScore + mushroom;
+	$("#playerScore").text(playerScore);
+	if (playerScore === computerScore) {
+	wins++;
+	$( "#wins" ).text(wins);
+	reset();
+} 
+	else if (playerScore > computerScore) {
+	losses++;
+	$( "#losses" ).text(losses);
+	reset();
+}
 });
 
 $( "#coinBox" ).click(function() {
-	console.log(coinBox); 
-});
+	playerScore = playerScore + mushroom;
+	$("#playerScore").text(playerScore);
+	
+	if (playerScore === computerScore) {
+	wins++;
+	$( "#wins" ).text(wins);
+	reset();
+} 
+	else if (playerScore > computerScore) {
+	losses++;
+	$( "#losses" ).text(losses);
+	reset();
+}
 
-$("#computerScore").text(computerScore);
+});
+	
+// if (updatedPlayerScore === playerScore) {
+// 	wins++;
+// 	$( "#wins" ).text(wins);
+// 	reset(); 
+// }
+
+// if (updatedPlayerScore > computerScore) {
+// 	losses++;
+// 	$( "#losses" ).text(losses);
+// 	reset();
+// }
+
+	
+
+
+
+
+
+
 
 
 
