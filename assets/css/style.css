@@ -19,27 +19,39 @@ body {
 .instructions {
 	background-color: #FFDAB9;
 	color:green;
-	width: 50%;
+	width: 40%;
+	margin-bottom:10px;
+	padding-bottom:15px;
 }
 
 .compScore {
 	background-color: green;
 	width: 30%;
+	padding: 10px;
+    margin-bottom: 4px;
+    font-size: 38px;
+
+
 	
 }
 
 .scores {
 	background-color: #00FFFF;
 	width: 30%;
+	line-height:25px;
 }
 
 .scoreTracker {
 	background-color: #228B22;
 	width: 25%;
+	padding:10px;
+	font-size: 20px;
 }
 
 #playerScore{
 		background-color: #228B22;
 		width: 25%;
+		padding:10px
+		margin-top:4px;
 
 }
