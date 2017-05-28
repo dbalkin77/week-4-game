@@ -7,13 +7,19 @@ body {
 	background-size: 80%;
 }
 
+.container{
+	margin-left:10px;
+}
+
 .header {
 	background-color:orange;
 	color:white;
 	font-size: 27px;
 	margin-bottom:5px;
+	margin-top: 10px;
 	width: 30%;
 	padding: 45px;
+	text-align: center;
 }
 
 .instructions {
@@ -22,6 +28,7 @@ body {
 	width: 40%;
 	margin-bottom:10px;
 	padding-bottom:15px;
+	text-align: center;
 }
 
 .compScore {
@@ -46,6 +53,7 @@ body {
 	width: 25%;
 	padding:10px;
 	font-size: 20px;
+	margin-top: 5px;
 }
 
 #playerScore{
